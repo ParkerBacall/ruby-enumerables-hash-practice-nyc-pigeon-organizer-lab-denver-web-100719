@@ -18,8 +18,8 @@ def nyc_pigeon_organizer(data)
   end
   hash.each do |name, keys| # seperates keys from arrays
     keys.each do |hash_value, array| # breaks up array and keys
-      data.each do |color_gender_lives, keys| #
-        keys.each do |value, array|
+      data.each do |color_gender_lives, keys| #digs into data to get to keys of names
+        keys.each do |value, array| #digs into data to get data keys and arrays of names
 
           array.each do |element|
             if element == name && hash_value == color_gender_lives
