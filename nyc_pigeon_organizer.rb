@@ -21,9 +21,9 @@ def nyc_pigeon_organizer(data)
       data.each do |color_gender_lives, keys| #digs into data to get to keys of names
         keys.each do |value, array| #digs into data to get data keys and arrays of names
 
-          array.each do |element|
-            if element == name && hash_value == color_gender_lives
-              hash[name][hash_value] << value.to_s
+          array.each do |element| #element is the names stored in each array pertaining to data
+            if element == name && hash_value == color_gender_lives #if element is equal to the name key for new hash and the hashvalue is eaqual to the current value of color_gender_lives
+              hash[name][hash_value] << value.to_s # set the value of hash name color_gender_lives to the current value
           end
         end
       end
